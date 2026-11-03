@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demo conceptual de gimnasio con actividades, horarios y planes de ejemplo.">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#17251d">
+  <title>Pulso · Entrená a tu ritmo (demo)</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="demo-strip">DEMO CONCEPTUAL <span>· Gimnasio, horarios, planes y precios ilustrativos</span></div>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Pulso, inicio"><img src="logo.svg" alt="" width="42" height="42"><span>PULSO<span class="brand-dot">.</span><small>CLUB DE ENTRENAMIENTO</small></span></a>
+    <nav aria-label="Navegación principal"><a href="#actividades">Actividades</a><a href="#horarios">Horarios</a><a href="#planes">Planes</a></nav>
+    <a class="header-cta" href="#consulta">Quiero empezar <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="contenido">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow light">MOVETE A TU MANERA / DEMO</p><h1 id="hero-title">Tu momento<br>de <em>moverte.</em></h1><p>Entrenamiento sin vueltas. Elegí una actividad, mirá los horarios y probá cómo sería una consulta en este gimnasio de ejemplo.</p><div class="hero-actions"><a class="button-lime" href="#actividades">Conocer actividades <span aria-hidden="true">↗</span></a><a class="hero-link" href="#horarios">Ver horarios <span aria-hidden="true">↓</span></a></div><div class="hero-caption">UN ESPACIO PARA EMPEZAR Y SEGUIR</div></div>
+      <div class="hero-photo"><img src="assets/gimnasio.jpg" alt="Interior ilustrativo de un gimnasio con personas entrenando en bicicleta y pesas" width="1440" height="960" fetchpriority="high"></div>
+    </section>
+    <section class="intro section-wrap" aria-label="Una forma simple de entrenar"><span class="intro-symbol" aria-hidden="true">✳</span><p>Un lugar para hacer lugar a lo que te hace bien. <strong>Venís como sos, empezás donde estás.</strong></p><span class="intro-index">01 / 04</span></section>
+    <section class="activities section-wrap section-pad" id="actividades" aria-labelledby="activities-title"><div class="section-heading"><div><p class="eyebrow">ENCONTRÁ TU FORMA</p><h2 id="activities-title">Hay más de una<br>forma de <em>entrenar.</em></h2></div><p>Opciones de ejemplo para quienes prefieren entrenar por su cuenta o moverse en grupo.</p></div><div id="activity-grid" class="activity-grid"></div></section>
+    <section class="schedule-section" id="horarios" aria-labelledby="schedule-title"><div class="section-wrap section-pad"><div class="section-heading schedule-heading"><div><p class="eyebrow light">ORGANIZÁ TU SEMANA</p><h2 id="schedule-title">Elegí cuándo<br>te queda <em>bien.</em></h2></div><p>Horarios ilustrativos de clases. En un gimnasio real, los cupos se confirmarían antes de asistir.</p></div><div class="schedule-panel"><div class="schedule-top"><p>Clases de ejemplo <span aria-hidden="true">↗</span></p><div id="day-filters" class="day-filters" role="group" aria-label="Filtrar horarios por día"></div></div><div id="schedule-list" class="schedule-list" aria-live="polite"></div></div></div></section>
+    <section class="plans section-wrap section-pad" id="planes" aria-labelledby="plans-title"><div class="section-heading"><div><p class="eyebrow">PLANES DE EJEMPLO</p><h2 id="plans-title">Una opción para<br>cada <em>ritmo.</em></h2></div><p>Precios mensuales ilustrativos en pesos argentinos. No hay inscripción ni cobro en esta demo.</p></div><div id="plan-grid" class="plan-grid"></div></section>
+    <section class="contact-section" id="consulta" aria-labelledby="contact-title"><div class="section-wrap contact-grid"><div class="contact-copy"><p class="eyebrow light">EL PRIMER PASO</p><h2 id="contact-title">Empezar puede ser así de <em>simple.</em></h2><p>Elegí qué te interesa y cuándo preferís entrenar. Esta demo prepara un resumen para mostrar cómo funcionaría una consulta.</p><div class="contact-note"><strong>Así funcionaría en un gimnasio real</strong><span>El equipo confirmaría horarios, cupos y precio antes de la inscripción.</span></div></div><form id="inquiry-form" class="inquiry-form"><label for="visitor-name">Tu nombre <span aria-hidden="true">*</span></label><input id="visitor-name" name="name" type="text" minlength="2" maxlength="60" autocomplete="name" placeholder="Ej.: Lautaro" required><label for="visitor-interest">¿Qué te interesa? <span aria-hidden="true">*</span></label><select id="visitor-interest" name="interest" required><option value="">Elegí una opción</option><option value="Sala de entrenamiento">Sala de entrenamiento</option><option value="Entrenamiento funcional">Entrenamiento funcional</option><option value="Movilidad y estiramiento">Movilidad y estiramiento</option><option value="Plan de clases">Plan de clases</option><option value="Pase completo">Pase completo</option></select><label for="visitor-time">¿Cuándo te queda mejor? <span aria-hidden="true">*</span></label><select id="visitor-time" name="time" required><option value="">Elegí un momento</option><option value="Por la mañana">Por la mañana</option><option value="Por la tarde">Por la tarde</option><option value="Aún no lo sé">Aún no lo sé</option></select><p class="form-disclaimer">Demo: el pedido no se envía, no se guarda y no reserva un cupo.</p><button class="button-lime" type="submit">Simular consulta <span aria-hidden="true">↗</span></button><div id="inquiry-result" class="inquiry-result" role="status" tabindex="-1" hidden></div></form></div></section>
+  </main>
+  <footer class="site-footer section-wrap"><a class="brand footer-brand" href="#inicio" aria-label="Pulso, volver al inicio"><img src="logo.svg" alt="" width="40" height="40"><span>PULSO<span class="brand-dot">.</span><small>CLUB DE ENTRENAMIENTO</small></span></a><p>Demo conceptual no oficial. Marca, fotografía, actividades, horarios y precios ilustrativos. Sin inscripción, cobro ni reservas reales.</p><a href="#inicio">Volver arriba ↑</a></footer>
+</body>
+</html>
