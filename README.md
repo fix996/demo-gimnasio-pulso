@@ -2,6 +2,8 @@
 
 Sitio estático y ficticio para mostrar a gimnasios de barrio. Abrí `dist/index.html` en un navegador o serví `dist/` con un servidor estático. No necesita instalación ni dependencias.
 
+Además de actividades y planes, incluye fotos ilustrativas del espacio, opiniones ficticias y un bloque listo para dirección, horarios y redes. Reemplazar estos ejemplos con datos autorizados al adaptarlo a un gimnasio real.
+
 ## Qué incluye
 
 - Portada, actividades y horarios de clases ilustrativos filtrables por día.
